@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Cms\Controller\Adminhtml\Page\PostDataProcessor">
+        <plugin name="PostDataProcessor_Save" type="Likipe\Cmspage\Plugin\Controller\Adminhtml\Page\PostDataProcessor" sortOrder="1"/>
+    </type>
+    <type name="Magento\Cms\Model\Page\DataProvider">
+        <plugin name="DataProvider_Load" type="Likipe\Cmspage\Plugin\Model\Page\DataProvider" sortOrder="1"/>
+    </type>
+    <preference for="Magento\Cms\Block\Adminhtml\Page\Edit\SaveAndContinueButton" type="Likipe\Cmspage\Block\Adminhtml\Page\Edit\SaveAndContinueButton" />
+    <preference for="Magento\Cms\Block\Adminhtml\Page\Edit\SaveButton" type="Likipe\Cmspage\Block\Adminhtml\Page\Edit\SaveButton" />
+    <preference for="Magento\Cms\Block\Adminhtml\Page\Edit\ResetButton" type="Likipe\Cmspage\Block\Adminhtml\Page\Edit\ResetButton" />
+    <preference for="Magento\Cms\Block\Adminhtml\Page\Edit\DeleteButton" type="Likipe\Cmspage\Block\Adminhtml\Page\Edit\DeleteButton" />
+    <preference for="Magento\Cms\Block\Adminhtml\Page\Edit\BackButton" type="Likipe\Cmspage\Block\Adminhtml\Page\Edit\BackButton" />
+
+    <preference for="Magento\Cms\Controller\Adminhtml\Page\Index" type="Likipe\Cmspage\Controller\Adminhtml\Page\Index" />
+    <preference for="Magento\Cms\Controller\Adminhtml\Page\Edit" type="Likipe\Cmspage\Controller\Adminhtml\Page\Edit" />
+    <preference for="Magento\Cms\Controller\Adminhtml\Page\Save" type="Likipe\Cmspage\Controller\Adminhtml\Page\Save" />
+    <preference for="Magento\Cms\Controller\Adminhtml\Page\Delete" type="Likipe\Cmspage\Controller\Adminhtml\Page\Delete" />
+	<preference for="Magento\Cms\Model\Page" type="Likipe\Cmspage\Model\Page" />
+    <preference for="Magento\Cms\Model\ResourceModel\Page" type="Likipe\Cmspage\Model\ResourceModel\Page"/>
+    <preference for="Magento\Cms\Model\ResourceModel\Page\Collection" type="Likipe\Cmspage\Model\ResourceModel\Page\Collection"/>
+    <preference for="Magento\Cms\Model\Page\DataProvider" type="Likipe\Cmspage\Model\Page\DataProvider"/>
+    
+</config>
